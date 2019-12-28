@@ -1,0 +1,93 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'gui.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(499, 475)
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(Form)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.countryInputLabel = QtWidgets.QLabel(Form)
+        self.countryInputLabel.setObjectName("countryInputLabel")
+        self.verticalLayout_2.addWidget(self.countryInputLabel)
+        self.countryTextBox = QtWidgets.QLineEdit(Form)
+        self.countryTextBox.setObjectName("countryTextBox")
+        self.verticalLayout_2.addWidget(self.countryTextBox)
+        self.countryTB = QtWidgets.QToolButton(Form)
+        self.countryTB.setObjectName("countryTB")
+        self.verticalLayout_2.addWidget(self.countryTB)
+        self.pointsInputLabel = QtWidgets.QLabel(Form)
+        self.pointsInputLabel.setObjectName("pointsInputLabel")
+        self.verticalLayout_2.addWidget(self.pointsInputLabel)
+        self.pointsTextBox = QtWidgets.QLineEdit(Form)
+        self.pointsTextBox.setObjectName("pointsTextBox")
+        self.verticalLayout_2.addWidget(self.pointsTextBox)
+        self.pointsTB = QtWidgets.QToolButton(Form)
+        self.pointsTB.setObjectName("pointsTB")
+        self.verticalLayout_2.addWidget(self.pointsTB)
+        self.countrySelectLabel = QtWidgets.QLabel(Form)
+        self.countrySelectLabel.setObjectName("countrySelectLabel")
+        self.verticalLayout_2.addWidget(self.countrySelectLabel)
+        self.countryNameComboBox = QtWidgets.QComboBox(Form)
+        self.countryNameComboBox.setObjectName("countryNameComboBox")
+        self.verticalLayout_2.addWidget(self.countryNameComboBox)
+        self.showTypeLabel = QtWidgets.QLabel(Form)
+        self.showTypeLabel.setObjectName("showTypeLabel")
+        self.verticalLayout_2.addWidget(self.showTypeLabel)
+        self.shopTypeComboBox = QtWidgets.QComboBox(Form)
+        self.shopTypeComboBox.setObjectName("shopTypeComboBox")
+        self.verticalLayout_2.addWidget(self.shopTypeComboBox)
+        self.allShopsCheckBox = QtWidgets.QCheckBox(Form)
+        self.allShopsCheckBox.setObjectName("allShopsCheckBox")
+        self.verticalLayout_2.addWidget(self.allShopsCheckBox)
+        spacerItem = QtWidgets.QSpacerItem(20, 14, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_2.addItem(spacerItem)
+        self.outputLocationLabel = QtWidgets.QLabel(Form)
+        self.outputLocationLabel.setObjectName("outputLocationLabel")
+        self.verticalLayout_2.addWidget(self.outputLocationLabel)
+        self.outputTextBox = QtWidgets.QLineEdit(Form)
+        self.outputTextBox.setObjectName("outputTextBox")
+        self.verticalLayout_2.addWidget(self.outputTextBox)
+        self.outputTB = QtWidgets.QToolButton(Form)
+        self.outputTB.setObjectName("outputTB")
+        self.verticalLayout_2.addWidget(self.outputTB)
+        spacerItem1 = QtWidgets.QSpacerItem(645, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.verticalLayout_2.addItem(spacerItem1)
+        self.submitPushButton = QtWidgets.QPushButton(Form)
+        self.submitPushButton.setObjectName("submitPushButton")
+        self.verticalLayout_2.addWidget(self.submitPushButton)
+
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Features Extract Tool"))
+        self.countryInputLabel.setText(_translate("Form", "Input Country Shapefile:"))
+        self.countryTextBox.setToolTip(_translate("Form", "Accepts a shapefile with a field of \'NAME\'"))
+        self.countryTB.setToolTip(_translate("Form", ".shp File Browser"))
+        self.countryTB.setText(_translate("Form", "..."))
+        self.pointsInputLabel.setText(_translate("Form", "Input Points Shapefile:"))
+        self.pointsTextBox.setToolTip(_translate("Form", "Accepts a shapefile with a field of \'shop\'"))
+        self.pointsTB.setToolTip(_translate("Form", ".shp File Browser"))
+        self.pointsTB.setText(_translate("Form", "..."))
+        self.countrySelectLabel.setText(_translate("Form", "Country of Interest:"))
+        self.countryNameComboBox.setToolTip(_translate("Form", "Filters field \'NAME\' from Country shapefile"))
+        self.showTypeLabel.setText(_translate("Form", "Shop Type:"))
+        self.shopTypeComboBox.setToolTip(_translate("Form", "Filters field \'shop\' from Points shapefile"))
+        self.allShopsCheckBox.setToolTip(_translate("Form", "Toggle on to select all shops. (Note: Shop Type Combo-box will not empty upon checking box.)"))
+        self.allShopsCheckBox.setText(_translate("Form", "Select All Shops"))
+        self.outputLocationLabel.setText(_translate("Form", "Output Location:"))
+        self.outputTextBox.setToolTip(_translate("Form", "Output location displayed as full filepath"))
+        self.outputTB.setToolTip(_translate("Form", "\'Save As\' File Browser"))
+        self.outputTB.setText(_translate("Form", "..."))
+        self.submitPushButton.setToolTip(_translate("Form", "Click this only after completing all other fields"))
+        self.submitPushButton.setText(_translate("Form", "Submit"))
+

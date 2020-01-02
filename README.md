@@ -9,12 +9,11 @@ with Penn State, only those which I thought were easily distributable.
 
 ### Multiproc NOAA Shapefiles 
   This project was an independent work where I wanted to create a webscraping script which would pull the data from every NOAA operated 
-  weather station and create unique shapefiles based on the weather stationID. This was done with use of the python multiprocessing module, beautiful soup, and arcpy
+  weather station and create unique shapefiles based on the weather stationID. This was done with use of the python multiprocessing module, BeautifulSoup, and arcpy.
   
 ### OSM QGIS Sample
   This project was a Penn State directed work where we were instructed to create a script which could parse an Open Street Maps .json file 
   and, by using a class hierarchy, create several geopackage layers of various hydro features for use in QGIS.  
   
 ### QT5 GUI Sample
-  This project was a Penn State directed work where we were instructed to create a GUI using the python QT5 module which would allow the user 
-  to extract points from a user selected shapefile based on parameters selected within the interface.
+  This project was a Penn State directed work where we were instructed to create a GUI using the python QT5 module which would allow the user to extract points from a user selected shapefile based on parameters selected within the interface.
